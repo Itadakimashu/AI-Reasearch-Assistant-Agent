@@ -20,7 +20,7 @@ logger = get_logger(__name__)
 
 
 def build_llm() -> ChatGoogleGenerativeAI:
-    return ChatGoogleGenerativeAI(model=settings.model_name)
+    return ChatGoogleGenerativeAI(model=settings.model_name,max_retries=6)
 
 
 def print_report(response: ResearchResponse) -> None:

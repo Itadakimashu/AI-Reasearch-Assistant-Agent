@@ -1,5 +1,50 @@
-.venv/
+# --- Environment / secrets ---
 .env
-*.pyc
-*.pyo
-*.pyd
+.env.*
+!.env.example
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- Packaging / build ---
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# --- Testing / coverage ---
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# --- Type checking / linting caches ---
+.mypy_cache/
+.ruff_cache/
+.pyre/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Project-specific output ---
+outputs/
+research_output.txt
+
+# --- Logs ---
+*.log
+
+# --- OS / editor cruft ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
