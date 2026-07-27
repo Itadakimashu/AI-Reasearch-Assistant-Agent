@@ -8,3 +8,4 @@ ddgs
 python-dotenv
 pydantic
 duckduckgo-search
+arxiv
